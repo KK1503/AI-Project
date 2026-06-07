@@ -1,0 +1,18 @@
+[
+  {
+    "question": "What is your return policy?",
+    "answer": "You can return items within 30 days."
+  },
+  {
+    "question": "Do you offer international shipping?",
+    "answer": "Yes, we ship worldwide."
+  },
+  {
+    "question": "How can I track my order?",
+    "answer": "Use the tracking link sent to your email."
+  },
+  {
+    "question": "What payment methods do you accept?",
+    "answer": "We accept cards, PayPal, and UPI."
+  }
+]
