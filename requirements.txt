@@ -5,3 +5,4 @@ faiss-cpu
 numpy
 pydantic
 PyPDF2
+openai

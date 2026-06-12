@@ -4,17 +4,36 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>FAQ Chatbot</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/static/style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>FAQ Chatbot</h1>
-    <div id="chat" class="chat"></div>
-    <form id="form">
-      <input id="input" type="text" placeholder="Ask a question..." autocomplete="off" required />
-      <button type="submit">Send</button>
-    </form>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="logo">FAQ</div>
+        <div class="title">FAQ Chatbot</div>
+      </div>
+      <p class="subtitle">Ask questions about the FAQ PDF and get instant answers.</p>
+      <div class="meta">Local demo • Fast retrieval</div>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <h1>Ask the FAQ</h1>
+        <div class="header-sub">Type a question or click examples to try.</div>
+      </header>
+
+      <section id="chat" class="chat" aria-live="polite"></section>
+
+      <form id="form" class="composer" autocomplete="off">
+        <input id="input" type="text" placeholder="Ask a question..." aria-label="Ask a question" required />
+        <button id="send" type="submit" aria-label="Send question">Send</button>
+      </form>
+    </main>
   </div>
+
   <script src="/static/app.js"></script>
 </body>
 </html>
