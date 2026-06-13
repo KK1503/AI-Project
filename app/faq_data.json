@@ -1,18 +1,202 @@
 [
   {
-    "question": "What is your return policy?",
-    "answer": "You can return items within 30 days."
+    "id": 1,
+    "question": "What is OCI?",
+    "answer": "Oracle Cloud Infrastructure (OCI) is Oracle's cloud platform that provides Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS) offerings for running enterprise workloads."
   },
   {
-    "question": "Do you offer international shipping?",
-    "answer": "Yes, we ship worldwide."
+    "id": 2,
+    "question": "What are the main OCI service categories?",
+    "answer": "Compute; Storage; Networking; Database; Security & Identity; Monitoring & Management; Containers & Kubernetes (OKE); Analytics & AI."
   },
   {
-    "question": "How can I track my order?",
-    "answer": "Use the tracking link sent to your email."
+    "id": 3,
+    "question": "What is a Tenancy in OCI?",
+    "answer": "A tenancy is a secure and isolated partition within OCI where all cloud resources are created and managed. Example: A company creates one OCI tenancy and manages all departments, projects, users, and cloud resources within it."
   },
   {
-    "question": "What payment methods do you accept?",
-    "answer": "We accept cards, PayPal, and UPI."
+    "id": 4,
+    "question": "What are Compartments?",
+    "answer": "Compartments are logical containers used to organize and isolate OCI resources. Examples include Production Compartment, Development Compartment, and Testing Compartment. Benefits include resource organization, access control, and cost tracking."
+  },
+  {
+    "id": 5,
+    "question": "What is a Region?",
+    "answer": "A Region is a localized geographic area containing one or more Availability Domains. Examples include Ashburn, Virginia; Phoenix, Arizona; and Mumbai, India."
+  },
+  {
+    "id": 6,
+    "question": "What is an Availability Domain (AD)?",
+    "answer": "An Availability Domain is an isolated data center within a region. Benefits include fault tolerance, high availability, and disaster recovery."
+  },
+  {
+    "id": 7,
+    "question": "What is a Fault Domain?",
+    "answer": "A Fault Domain is a logical grouping of hardware within an Availability Domain. It protects against hardware failures and improves application availability."
+  },
+  {
+    "id": 8,
+    "question": "What is a Virtual Cloud Network (VCN)?",
+    "answer": "VCN is OCI's virtual network. It is similar to a traditional data center network. Components include CIDR Block, Subnets, Route Tables, Security Lists, and Gateways."
+  },
+  {
+    "id": 9,
+    "question": "Difference between Public and Private Subnet?",
+    "answer": "A Public Subnet has Internet access, uses an Internet Gateway, and usually hosts web servers. A Private Subnet has no direct Internet access, uses a NAT Gateway, and usually hosts databases."
+  },
+  {
+    "id": 10,
+    "question": "What is an Internet Gateway?",
+    "answer": "An Internet Gateway allows communication between VCN resources and the public Internet. Example: public web application access."
+  },
+  {
+    "id": 11,
+    "question": "What is a NAT Gateway?",
+    "answer": "A NAT Gateway allows private instances to access the Internet without exposing them publicly. Example: downloading OS patches."
+  },
+  {
+    "id": 12,
+    "question": "What is a Service Gateway?",
+    "answer": "A Service Gateway provides private access to Oracle services without traversing the Internet. Example: accessing Object Storage privately."
+  },
+  {
+    "id": 13,
+    "question": "What is Dynamic Routing Gateway (DRG)?",
+    "answer": "DRG connects OCI networks with on-premises data centers, other OCI regions, and third-party clouds. It is used for hybrid cloud connectivity."
+  },
+  {
+    "id": 14,
+    "question": "What is FastConnect?",
+    "answer": "FastConnect is a dedicated private connection between OCI and an on-premises environment. Benefits include low latency, high bandwidth, and secure communication."
+  },
+  {
+    "id": 15,
+    "question": "What is a Compute Instance?",
+    "answer": "A Compute Instance is a virtual machine running applications in OCI. Types include VM and Bare Metal."
+  },
+  {
+    "id": 16,
+    "question": "Difference between VM and Bare Metal?",
+    "answer": "A VM uses a shared physical host, is virtualized, and usually has lower cost. Bare Metal uses a dedicated server, has no hypervisor, and provides high performance."
+  },
+  {
+    "id": 17,
+    "question": "What is Block Volume?",
+    "answer": "Block Volume is persistent storage attached to compute instances. It is similar to a hard disk. Features include backup, clone, and resize."
+  },
+  {
+    "id": 18,
+    "question": "What is Object Storage?",
+    "answer": "Object Storage is highly scalable storage for unstructured data. Examples include backups, images, videos, and logs."
+  },
+  {
+    "id": 19,
+    "question": "Difference between Block, Object and File Storage?",
+    "answer": "Block Storage is used for VM disks and provides high IOPS. Object Storage is used as a backup repository and provides unlimited scalability. File Storage is a shared file system and provides NFS access."
+  },
+  {
+    "id": 20,
+    "question": "What is OCI Load Balancer?",
+    "answer": "OCI Load Balancer distributes incoming traffic across multiple backend servers. Benefits include high availability, scalability, and fault tolerance."
+  },
+  {
+    "id": 21,
+    "question": "Difference between Public and Private Load Balancer?",
+    "answer": "A Public Load Balancer is Internet-facing and uses a public IP. A Private Load Balancer handles internal traffic only and uses a private IP."
+  },
+  {
+    "id": 22,
+    "question": "What are Health Checks?",
+    "answer": "Health Checks allow a Load Balancer to continuously check backend server health. Unhealthy servers are automatically removed from traffic routing."
+  },
+  {
+    "id": 23,
+    "question": "What is SSL Termination?",
+    "answer": "SSL Termination means the Load Balancer decrypts HTTPS traffic before forwarding requests to backend servers. Benefits include reduced backend workload and centralized certificate management."
+  },
+  {
+    "id": 24,
+    "question": "What is Identity and Access Management (IAM)?",
+    "answer": "IAM controls authentication and authorization. Components include Users, Groups, Policies, and Dynamic Groups."
+  },
+  {
+    "id": 25,
+    "question": "What is a Dynamic Group?",
+    "answer": "A Dynamic Group allows OCI resources to access other OCI services without user credentials. Example: a Compute instance accessing Object Storage."
+  },
+  {
+    "id": 26,
+    "question": "What are OCI Policies?",
+    "answer": "Policies define permissions. Example: Allow group DBAdmins to manage database-family in compartment Production."
+  },
+  {
+    "id": 27,
+    "question": "What is OCI Vault?",
+    "answer": "OCI Vault is a secure service for storing encryption keys, secrets, and certificates."
+  },
+  {
+    "id": 28,
+    "question": "What is Customer Managed Key (CMK)?",
+    "answer": "Customer Managed Keys are encryption keys managed by customers rather than Oracle. They provide additional security and compliance."
+  },
+  {
+    "id": 29,
+    "question": "What is Autonomous Database?",
+    "answer": "Autonomous Database is a self-managing Oracle Database that automates patching, backup, tuning, and scaling."
+  },
+  {
+    "id": 30,
+    "question": "What is Oracle RAC?",
+    "answer": "Oracle Real Application Clusters allows multiple database servers to access a single database. Benefits include high availability and load balancing."
+  },
+  {
+    "id": 31,
+    "question": "What is Data Guard?",
+    "answer": "Data Guard is Oracle's disaster recovery solution. It maintains synchronized standby databases."
+  },
+  {
+    "id": 32,
+    "question": "What is OKE?",
+    "answer": "Oracle Kubernetes Engine (OKE) is OCI's managed Kubernetes service. Benefits include automated cluster management, high availability, and auto scaling."
+  },
+  {
+    "id": 33,
+    "question": "What is Monitoring Service?",
+    "answer": "Monitoring Service tracks CPU, memory, network, and storage utilization. It provides metrics and alarms."
+  },
+  {
+    "id": 34,
+    "question": "What is OCI Logging Service?",
+    "answer": "OCI Logging Service provides centralized collection and analysis of logs from OCI resources."
+  },
+  {
+    "id": 35,
+    "question": "What is Terraform in OCI?",
+    "answer": "Terraform is an Infrastructure as Code (IaC) tool used to automate OCI resource deployment. Examples include creating a VCN, Compute instance, or Load Balancer using code."
+  },
+  {
+    "id": 36,
+    "question": "What is Resource Manager?",
+    "answer": "Resource Manager is an OCI-managed Terraform service. Benefits include no Terraform server required, version control integration, and automated deployments."
+  },
+  {
+    "id": 37,
+    "question": "What is OCI DevOps?",
+    "answer": "OCI DevOps provides CI/CD services including Build Pipelines, Deployment Pipelines, and Artifact Management."
+  },
+  {
+    "id": 38,
+    "question": "What is OCI Cloud Guard?",
+    "answer": "OCI Cloud Guard is a security posture management service. It detects misconfigurations, security threats, and compliance violations."
+  },
+  {
+    "id": 39,
+    "question": "What is Security Zone?",
+    "answer": "Security Zone enforces Oracle security best practices. Examples include no public database access and mandatory encryption."
+  },
+  {
+    "id": 40,
+    "question": "How would you design a highly available OCI architecture?",
+    "answer": "A typical design includes multi-AD deployment, Public Load Balancer, multiple application servers, database with Data Guard, Object Storage backups, IAM and Vault security, and Monitoring and Alarms. Architecture flow: Internet -> Public Load Balancer -> App Servers -> Private Subnet -> Oracle Database with Data Guard Standby -> Object Storage Backup."
   }
 ]

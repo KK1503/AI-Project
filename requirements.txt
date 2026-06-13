@@ -1,8 +1,7 @@
 fastapi
 uvicorn
 sentence-transformers
-faiss-cpu
+chromadb
 numpy
 pydantic
 PyPDF2
-openai
