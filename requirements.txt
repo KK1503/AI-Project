@@ -5,3 +5,4 @@ chromadb
 numpy
 pydantic
 PyPDF2
+pdfplumber
