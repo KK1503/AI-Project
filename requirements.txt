@@ -6,3 +6,4 @@ numpy
 pydantic
 PyPDF2
 pdfplumber
+oracledb
